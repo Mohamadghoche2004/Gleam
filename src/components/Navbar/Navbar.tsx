@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import "./navbar.css";
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800">
+    <nav className="navbar">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -23,7 +23,9 @@ export default function Navbar() {
               <span className="sr-only">Open main menu</span>
 
               <svg
-                className={`${isMobileMenuOpen ? 'hidden' : 'block'} size-6 transition-all duration-200 ease-in-out`}
+                className={`${
+                  isMobileMenuOpen ? "hidden" : "block"
+                } size-6 transition-all duration-200 ease-in-out`}
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
@@ -38,7 +40,9 @@ export default function Navbar() {
               </svg>
 
               <svg
-                className={`${isMobileMenuOpen ? 'block' : 'hidden'} size-6 transition-all duration-200 ease-in-out`}
+                className={`${
+                  isMobileMenuOpen ? "block" : "hidden"
+                } size-6 transition-all duration-200 ease-in-out`}
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
@@ -53,59 +57,49 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div className="flex flex-1 items-center justify-between">
             <div className="flex shrink-0 items-center">
               <Link href="/">
                 <Image
-                  className="h-8 w-auto"
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                  className="h-10 w-auto"
+                  src="/gleamLogo.png"
                   alt="Your Company"
-                  width={32}
-                  height={32}
+                  width={50}
+                  height={50}
                 />
               </Link>
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:block">
               <div className="flex space-x-4">
                 <Link
-                  href="/"
-                  className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                  aria-current="page"
-                >
-                  Dashboard
-                </Link>
-                <Link
                   href="/team"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium "
                 >
                   Team
                 </Link>
                 <Link
                   href="/projects"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium "
                 >
                   Projects
                 </Link>
                 <Link
                   href="/calendar"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium "
                 >
                   Calendar
                 </Link>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
       {/* Mobile menu */}
-      <div 
+      <div
         className={`sm:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-          isMobileMenuOpen 
-            ? 'max-h-64 opacity-100' 
-            : 'max-h-0 opacity-0'
-        }`} 
+          isMobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+        }`}
         id="mobile-menu"
       >
         <div className="space-y-1 px-2 pt-2 pb-3">

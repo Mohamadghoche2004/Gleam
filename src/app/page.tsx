@@ -1,8 +1,13 @@
+import AboutUs from "@/components/Sections/AboutUs/AboutUs";
+import HeroSection from "@/components/Sections/HeroSection/HeroSection";
+import ShopSection from "@/components/Sections/ShopSection/ShopSection";
 
 export default function Home() {
   return (
   <div>
-    <h1>Hello World</h1>
+    <HeroSection />
+    <AboutUs />
+    <ShopSection/>
   </div>
   );
 }
