@@ -81,7 +81,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Candles</h1>
+                <h1 className="text-lg font-semibold color-primary">Candles</h1>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Macrame</h1>
+                <h1 className="text-lg font-semibold color-primary">Macrame</h1>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Macrame</h1>
+                <h1 className="text-lg font-semibold color-primary">Macrame</h1>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Macrame</h1>
+                <h1 className="text-lg font-semibold color-primary">Macrame</h1>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Macrame</h1>
+                <h1 className="text-lg font-semibold color-primary">Macrame</h1>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Macrame</h1>
+                <h1 className="text-lg font-semibold color-primary">Macrame</h1>
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Horizon</h1>
+                <h1 className="text-lg font-semibold color-primary">Horizon</h1>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Mirage Mirror</h1>
+                <h1 className="text-lg font-semibold color-primary">Mirage Mirror</h1>
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold">Boho Grace</h1>
+                <h1 className="text-lg font-semibold color-primary">Boho Grace</h1>
               </div>
             </div>
           </div>
