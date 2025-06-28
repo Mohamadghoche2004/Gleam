@@ -57,11 +57,11 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex flex-1 items-center justify-between">
+          <div className="flex flex-1 items-center justify-center  min-[640px]:justify-between">
             <div className="flex shrink-0 items-center">
               <Link href="/">
                 <Image
-                  className="h-10 w-auto"
+                  className="h-10 w-auto "
                   src="/gleamLogo.png"
                   alt="Your Company"
                   width={50}
@@ -104,16 +104,9 @@ export default function Navbar() {
       >
         <div className="space-y-1 px-2 pt-2 pb-3">
           <Link
-            href="/"
-            className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white transition-colors duration-200 ease-in-out"
-            aria-current="page"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Dashboard
-          </Link>
-          <Link
             href="/team"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
+            style={{ color: "var(--primary)" }}
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Team
@@ -121,6 +114,7 @@ export default function Navbar() {
           <Link
             href="/projects"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
+            style={{ color: "var(--primary)" }}
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Projects
@@ -128,6 +122,7 @@ export default function Navbar() {
           <Link
             href="/calendar"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
+            style={{ color: "var(--primary)" }}
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Calendar
