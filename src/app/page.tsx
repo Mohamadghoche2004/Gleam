@@ -1,5 +1,6 @@
 import AboutUs from "@/components/Sections/AboutUs/AboutUs";
 import HeroSection from "@/components/Sections/HeroSection/HeroSection";
+import HowToOrderSection from "@/components/Sections/HowToOrderSection/HowToOrderSection";
 import ShopSection from "@/components/Sections/ShopSection/ShopSection";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <HeroSection />
     <AboutUs />
     <ShopSection/>
+    <HowToOrderSection/>
   </div>
   );
 }
