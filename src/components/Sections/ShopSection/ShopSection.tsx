@@ -123,7 +123,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold color-primary">Scented Jar</h1>
+                <h1 className="text-lg font-semibold color-primary">Taper Candle</h1>
               </div>
             </div>
           </div>

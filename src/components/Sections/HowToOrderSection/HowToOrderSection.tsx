@@ -18,7 +18,7 @@ export default function HowToOrderSection() {
           Step 2 - Place Your Order{" "}
         </span>
         <p className="text-lg text-center color-primary">
-          Send us a message on WhatsApp or fill out our order form. We’ll
+          Send us a message on WhatsApp or fill out our order form. We&apos;ll
           confirm everything with you.
         </p>
       </div>
