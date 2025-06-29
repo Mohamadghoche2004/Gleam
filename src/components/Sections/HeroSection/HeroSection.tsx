@@ -3,8 +3,8 @@ import "./hero.css";
 
 export default function HeroSection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-20 gap-10 md:gap-0">
-      <div className="col-span-1 flex flex-col  px-10 sm:px-20">
+    <div id="home" className="grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-20 gap-10 md:gap-0">
+      <div className="col-span-1 flex flex-col  px-10 sm:px-20 xl:pl-70">
         <h1 className="text-xl sm:text-3xl font-bold color-primary text-center md:text-left">
           Handmade Candles & Macramé Decor
         </h1>

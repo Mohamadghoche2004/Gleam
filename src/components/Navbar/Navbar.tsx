@@ -1,11 +1,22 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import "./navbar.css";
+
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
@@ -59,7 +70,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center  min-[640px]:justify-between">
             <div className="flex shrink-0 items-center">
-              <Link href="/">
+              <button onClick={() => scrollToSection('home')}>
                 <Image
                   className="h-10 w-auto "
                   src="/gleamLogo.png"
@@ -67,28 +78,28 @@ export default function Navbar() {
                   width={50}
                   height={50}
                 />
-              </Link>
+              </button>
             </div>
             <div className="hidden sm:block">
               <div className="flex space-x-4">
-                <Link
-                  href="/team"
-                  className="rounded-md px-3 py-2 text-sm font-medium "
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="rounded-md px-3 py-2 text-sm font-medium  transition-colors duration-200 cursor-pointer"
                 >
-                  Team
-                </Link>
-                <Link
-                  href="/projects"
-                  className="rounded-md px-3 py-2 text-sm font-medium "
+                  About Us
+                </button>
+                <button
+                  onClick={() => scrollToSection('shop')}
+                  className="rounded-md px-3 py-2 text-sm font-medium  transition-colors duration-200 cursor-pointer"
                 >
-                  Projects
-                </Link>
-                <Link
-                  href="/calendar"
-                  className="rounded-md px-3 py-2 text-sm font-medium "
+                  Our Creations
+                </button>
+                <button
+                  onClick={() => scrollToSection('order')}
+                  className="rounded-md px-3 py-2 text-sm font-medium  transition-colors duration-200 cursor-pointer"
                 >
-                  Calendar
-                </Link>
+                  How to Order?
+                </button>
               </div>
             </div>
           </div>
@@ -103,30 +114,27 @@ export default function Navbar() {
         id="mobile-menu"
       >
         <div className="space-y-1 px-2 pt-2 pb-3">
-          <Link
-            href="/team"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
+          <button
+            onClick={() => scrollToSection('about')}
+            className="block w-full text-left rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
             style={{ color: "var(--primary)" }}
-            onClick={() => setIsMobileMenuOpen(false)}
           >
-            Team
-          </Link>
-          <Link
-            href="/projects"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
+            About Us
+          </button>
+          <button
+            onClick={() => scrollToSection('shop')}
+            className="block w-full text-left rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
             style={{ color: "var(--primary)" }}
-            onClick={() => setIsMobileMenuOpen(false)}
           >
-            Projects
-          </Link>
-          <Link
-            href="/calendar"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
+            Our Creations
+          </button>
+          <button
+            onClick={() => scrollToSection('order')}
+            className="block w-full text-left rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-200 ease-in-out"
             style={{ color: "var(--primary)" }}
-            onClick={() => setIsMobileMenuOpen(false)}
           >
-            Calendar
-          </Link>
+            How to Order?
+          </button>
         </div>
       </div>
     </nav>

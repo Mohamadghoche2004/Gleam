@@ -24,6 +24,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--feather);
   color: var(--foreground);

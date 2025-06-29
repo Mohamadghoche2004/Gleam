@@ -45,7 +45,7 @@ export default function ShopSection() {
   };
 
   return (
-    <div className=" justify-center items-center p-10 sm:py-30 md:p-40 ">
+    <div id="shop" className=" justify-center items-center p-10 sm:py-30 md:p-40 ">
       <h1 className="text-4xl font-bold text-center mb-10 color-primary">Our Creations</h1>
       <Box
         sx={{
@@ -109,7 +109,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold color-primary">Macrame</h1>
+                <h1 className="text-lg font-semibold color-primary">Scented Jar</h1>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function ShopSection() {
                 className="w-full h-full object-cover"
               />
               <div className="p-4">
-                <h1 className="text-lg font-semibold color-primary">Macrame</h1>
+                <h1 className="text-lg font-semibold color-primary">Elegant Set</h1>
               </div>
             </div>
           </div>

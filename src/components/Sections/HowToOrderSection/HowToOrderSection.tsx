@@ -1,6 +1,6 @@
 export default function HowToOrderSection() {
   return (
-    <div className=" flex flex-col items-center justify-center bg-white p-10 md:p-30 gap-10">
+    <div id="order" className=" flex flex-col items-center justify-center bg-white p-10 md:p-30 gap-10">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-5 color-primary">
         How to Order ?
       </h1>
